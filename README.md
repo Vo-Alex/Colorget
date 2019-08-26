@@ -36,25 +36,3 @@ python3 colorget.py your_name.mkv 2 1 300
 Le résultat obtenu est le suivant:
 
 ![](./exemple/your_name.jpeg)
-
-# Amélioration à apporter
-
-Exporter chaque échantillons dans un dossier et toutes les images associées à un échantillon dans un autre. Récupéré l'amplitude audio sur l'intervalle entre 2 échantillons pour au final généré un fichier json sous la forme :
-
-``` json
-{
-    "image(n)": { 
-        "echantillon": "./echantillon/n.jpeg",
-        "image_full": "./image_full/n.jpeg",
-        "amplitude": 300
-    },
-
-    "image(n+1)": { 
-        "echantillon": "./echantillon/n+1.jpeg",
-        "image_full": "./image_full/n+1.jpeg",
-        "amplitude": 50
-    }
-}
-```
-
-Qui permettra de faire un affichage sous la forme d'un site web.
